@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Rendering from './Rendering';
+import Conditional from './Conditional';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Rendering />
+        <Conditional />
       </header>
     </div>
   );
