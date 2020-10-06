@@ -10,8 +10,25 @@ const List = () => {
     { id: 6, name: 'Desta', gender: 'male' },
   ]
 
-  const displayUser = users.map((user) => <li key={user.id}>{user.name} ({user.gender})</li>)
-  return <ul>{displayUser}</ul>
+  return <table border='1'>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>GENDER</th>
+      </tr>
+    </thead>
+    <tbody>
+      {users.length > 0 && users.map((user) => {
+        const { id, name, gender } = user
+        return <tr key={id}>
+          <td>{id}</td>
+          <td>{name}</td>
+          <td>{gender}</td>
+        </tr>
+      })}
+    </tbody>
+  </table>
 }
 
 export default List;
