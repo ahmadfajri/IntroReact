@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import AllEvent from './AllEvent';
+import BlueButton from './BlueButton';
 
 function App() {
+  function info() {
+    alert('Lorem ipsum dolor sit amet')
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <AllEvent />
-      </header>
+      <BlueButton onCustomClick={info} caption='Tampilkan Info' />
     </div>
   );
 }
