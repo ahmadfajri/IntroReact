@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import List from './List';
+import AllEvent from './AllEvent';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <List />
+        <AllEvent />
       </header>
     </div>
   );
