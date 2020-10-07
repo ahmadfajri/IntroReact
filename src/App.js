@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Counter from './Counter';
+import ControlledForm from './ControlledForm';
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <ControlledForm />
     </div>
   );
 }
