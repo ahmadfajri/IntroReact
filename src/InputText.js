@@ -1,9 +1,9 @@
 import * as React from 'react'
 
-const InputText = ({ label, value, onCustomChange }) => {
+const InputText = ({ label, value, onChange }) => {
 
   return <label>
-    {label} : <input type='text' value={value} onChange={onCustomChange} />
+    {label} : <input type='text' value={value} onChange={onChange} />
   </label>
 }
 

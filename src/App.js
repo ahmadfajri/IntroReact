@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import FormInput from './FormInput';
+import FormMultiple from './FormMultiple';
 
 function App() {
   return (
     <div className="App">
-      <FormInput />
+      <FormMultiple />
     </div>
   );
 }

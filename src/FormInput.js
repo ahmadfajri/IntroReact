@@ -10,7 +10,7 @@ const FormInput = () => {
   }
 
   return <form onSubmit={handleSubmit}>
-    <InputText label='Name' value={name} onCustomChange={(e) => setName(e.target.value)} />
+    <InputText label='Name' value={name} onChange={(e) => setName(e.target.value)} />
     <input type='submit' value='Submit' />
   </form>
 }
