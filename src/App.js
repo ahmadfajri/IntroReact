@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Hello from './Hello';
+import Editing from './Editing';
 
 function App() {
   return (
     <div className="App">
-      <Hello name={[1, 2, 3]} />
+      <Editing value="Edit Teks Disini" />
     </div>
   );
 }
