@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import CleanupChat from './CleanupChat';
+import TimeElapsed from './TimeElapsed';
 
 function App() {
   return (
     <div className="App">
-      <CleanupChat />
+      <TimeElapsed />
     </div>
   );
 }
