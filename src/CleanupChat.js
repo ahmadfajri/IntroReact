@@ -2,6 +2,7 @@ import * as React from 'react'
 
 const CleanupChat = props => {
   let [friend, setFriend] = React.useState(null);
+
   React.useEffect(() => {
     if (!friend) return;
     console.log(`EFFECT: subscribe chat message dari ${friend}`);
@@ -9,6 +10,7 @@ const CleanupChat = props => {
       console.log(`CLEANUP: unsubscribe chat message dari ${friend}`);
     };
   }, [friend]);
+
   friend && console.log(`RENDER: friend ${friend}`);
   return (
     <div>
