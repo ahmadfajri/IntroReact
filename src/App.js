@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Editing from './Editing';
+import CleanupChat from './CleanupChat';
 
 function App() {
   return (
     <div className="App">
-      <Editing value="Edit Teks Disini" />
+      <CleanupChat />
     </div>
   );
 }
