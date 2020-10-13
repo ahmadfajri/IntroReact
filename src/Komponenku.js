@@ -4,14 +4,15 @@ const Komponenku = props => {
 
   let [menu, setMenu] = React.useState([]);
 
+  const fetchMenu = React.useCallback(() => {
+    return ['nasi padang', 'nasi uduk', 'nasi gudeg']
+  }, []);
+
   React.useEffect(() => {
-    const fetchMenu = function () {
-      return ['nasi padang', 'nasi uduk', 'nasi gudeg']
-    }
 
     let data = fetchMenu()
     setMenu(data)
-  }, [])
+  }, [fetchMenu])
 
   return <div>
     {menu.map(makanan => <div>{makanan}</div>)}
